@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Greye's World Survey</title>
+        <link rel="stylesheet" href="surveyLayout.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="nav__links">
+                    <li><a href="homePage.html" >Home</a></li>
+                    <li><a href="aboutPage.html" >About</a></li>
+                    <li><a href="surveyPage.html" >Survey</a></li>
+                    <li><a href="picturePage.html" >Pictures</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <h1 class="heading1">Please Take This Surrrrvey Below</h1>
+
+        <form action="/form-handling-url" method="post">
+            <fieldset>
+                <legend class="legend">Greye's Survey</legend>
+
+                <div class="survey">
+                    <label for="haveCat">First things first... Do you have a cat?<br></label>
+                    <input type="radio" id="yes" name="have_cat">
+                    <label for="yes" class="answer">YES!</label>
+                    <input type="radio" id="no" name="have_cat">
+                    <label for="no" class="answer">No...</label>
+                </div>
+
+                <div class="survey">
+                    <label for="ifYes">If Yes: What is your cat's name?</label>
+                    <input type="text" id="ifYes" name="if_Yes" class="textInput">
+                </div>
+
+                <div class="survey">
+                    <label for="kindOfCat">What kind of cat do you have?</label>
+                    <input type="text" id="kindOfCat" name="kind_Of_Cat" class="textInput">
+                </div>
+
+                <div class="survey">
+                    <label for="ifNo">If No: Would you like to have a cat one day?<br></label>
+                    <input type="checkbox" id="yes1" name="yes1" value="Yes">
+                    <label for="yes1" class="answer">Yes, I would love a cat companion<br></label>
+                    <input type="checkbox" iid="no1" name="no1" value="No">
+                    <label for="no1" class="answer">No, and I don't think I would<br></label>
+                    <input type="checkbox" id="no2" name="no2" value="no_But">
+                    <label for="no2" class="answer">Not yet, but I plan to one day!</label>
+                </div>
+
+                <div class="survey">
+                    <label for="like">What do you like about cats?</label>
+                    <textarea id="like" name="like" class="textArea"></textarea>
+                </div>
+
+                <div class="button">
+                    <button type="submit" class="button">Submit!</button>
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>
